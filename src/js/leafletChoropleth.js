@@ -32,14 +32,11 @@ info.addTo(map);
 ////////////////////////////////////////////////////////////////////////////////
 // get color depending on population density value
 function getColor(d) {
-  return d > 1000 ? '#800026' :
-    d > 500 ? '#BD0026' :
-    d > 200 ? '#E31A1C' :
-    d > 100 ? '#FC4E2A' :
-    d > 50 ? '#FD8D3C' :
-    d > 20 ? '#FEB24C' :
-    d > 10 ? '#FED976' :
-    '#FFEDA0';
+  return d > 40 ? '#7a0177' :
+    d > 30 ? '#c51b8a' :
+    d > 20 ? '#f768a1' :
+    d > 10 ? '#fbb4b9' :
+    '#feebe2';
 }
 // set color of the json based on its Population Density
 function style(feature) {
