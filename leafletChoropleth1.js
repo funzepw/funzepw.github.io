@@ -22,8 +22,8 @@ info.onAdd = function(map) {
 };
 
 info.update = function(props) {
-  this._div.innerHTML = '<h4>US Population Density</h4>' + (props ?
-    '<b>' + props.name + '</b><br />' + props.density + ' people / mi<sup>2</sup>' :
+  this._div.innerHTML = '<h4>US Population Catholic</h4>' + (props ?
+    '<b>' + props.name + '</b><br />' + props.catholic + '% adherents' :
     'Hover over a state');
 };
 
@@ -32,14 +32,11 @@ info.addTo(map);
 ////////////////////////////////////////////////////////////////////////////////
 // get color depending on population density value
 function getColor(d) {
-  return d > 1000 ? '#800026' :
-    d > 500 ? '#BD0026' :
-    d > 200 ? '#E31A1C' :
-    d > 100 ? '#FC4E2A' :
-    d > 50 ? '#FD8D3C' :
-    d > 20 ? '#FEB24C' :
-    d > 10 ? '#FED976' :
-    '#FFEDA0';
+  return d > 40 ? '#7a0177' :
+    d > 30 ? '#c51b8a' :
+    d > 20 ? '#f768a1' :
+    d > 10 ? '#fbb4b9' :
+    '#feebe2';
 }
 // set color of the json based on its Population Density
 function style(feature) {
@@ -49,7 +46,7 @@ function style(feature) {
     color: 'white',
     dashArray: '3',
     fillOpacity: 0.7,
-    fillColor: getColor(feature.properties.density)
+    fillColor: getColor(feature.properties.catholic)
   };
 }
 // highlightFeature function
