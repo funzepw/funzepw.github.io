@@ -22,8 +22,8 @@ info.onAdd = function(map) {
 };
 //changed h4 props.density 
 info.update = function(props) {
-  this._div.innerHTML = '<h4>US Catholic </h4>' + (props ?
-    '<b>' + props.name + '</b><br />' + props.catholic + '% Adherent' :
+  this._div.innerHTML = '<h4>US Catholic Membership </h4>' + (props ?
+    '<b>' + props.name + '</b><br />' + props.catholic + '% of Population' :
     'Hover over a state');
 };
 
