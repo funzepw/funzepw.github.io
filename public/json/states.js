@@ -3968,7 +3968,7 @@ var statesData = {
         "name": "Colorado",
         "density": 49.33,
         "catholic": 16.14,
-        "latter": 2.93
+        "latter": 2.93,
         "soutbap": 1.42
       },
       "geometry": {
