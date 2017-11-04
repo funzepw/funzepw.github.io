@@ -20,10 +20,10 @@ info.onAdd = function(map) {
   this.update();
   return this._div;
 };
-
+//changed h4 props.density 
 info.update = function(props) {
-  this._div.innerHTML = '<h4>US Population Density</h4>' + (props ?
-    '<b>' + props.name + '</b><br />' + props.density + ' people / mi<sup>2</sup>' :
+  this._div.innerHTML = '<h4>US Catholic </h4>' + (props ?
+    '<b>' + props.name + '</b><br />' + props.catholic + '% Adherent' :
     'Hover over a state');
 };
 
@@ -46,7 +46,7 @@ function style(feature) {
     color: 'white',
     dashArray: '3',
     fillOpacity: 0.7,
-    fillColor: getColor(feature.properties.density)
+    fillColor: getColor(feature.properties.catholic)//changed density to catholic
   };
 }
 // highlightFeature function
