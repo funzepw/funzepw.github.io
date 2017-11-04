@@ -6,7 +6,8 @@ var statesData = {
       "id": "01",
       "properties": {
         "name": "Alabama",
-        "density": 94.65
+        "density": 94.65,
+        "catholic": 4.34
       },
       "geometry": {
         "type": "Polygon",
@@ -117,7 +118,8 @@ var statesData = {
       "id": "02",
       "properties": {
         "name": "Alaska",
-        "density": 1.264
+        "density": 1.264,
+        "catholic": 17.43
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -3429,7 +3431,8 @@ var statesData = {
       "id": "04",
       "properties": {
         "name": "Arizona",
-        "density": 57.05
+        "density": 57.05,
+        "catholic": 14.55
       },
       "geometry": {
         "type": "Polygon",
