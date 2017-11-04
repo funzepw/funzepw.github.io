@@ -20,11 +20,11 @@ info.onAdd = function(map) {
   this.update();
   return this._div;
 };
-
+//+ props.density + ' people / mi<sup>2</sup>''<h4>US Population Density</h4>'
 info.update = function(props) {
-  this._div.innerHTML = '<h4>US Population Density</h4>' + (props ?
-    '<b>' + props.name + '</b><br />' + props.density + ' people / mi<sup>2</sup>' :
-    'Hover over a state');
+  this._div.innerHTML = '<h4>Catholic</h4>' + (props ?
+    '<b>' + props.name + '</b><br />' + props.catholic + '% Adherents' :
+    'Hover over a state'); 
 };
 
 info.addTo(map);
